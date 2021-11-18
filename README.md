@@ -21,4 +21,3 @@ P.S. nel nome del file è preferibile utilizzare nomi brevi e senza spazi.
 
 ## Author
 Vicentini Tommaso
-"# ics_generator" 

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR								#PARTE OBBLIGATORIA
+VERSION:2.0								#PARTE OBBLIGATORIA
+PRODID:< [inserisci qui le informazioni sull'ID] >
+
+(INFORMAZIONI DI INTESTAZIONE)
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+
+BEGIN:VEVENT								#PARTE OBBLIGATORIA
+
+(DETTAGLI EVENTO)
+ 	SUMMARY:							#titolo
+	UID:								#identificativo evento (Utile per rimpiazzare eventi già creati)
+	SEQUENCE:0
+	STATUS:CONFIRMED
+	TRANSP:TRANSPARENT						#se presente da "Disponibile" altrimenti "Occupato"   Alterantiva(OPAQUE)->facoltativo
+ 	RRULE:FREQ=							#frequenza			annuale (YEARLY), Giornaliera(DAILY), settimanale(WEEKLY), mensile(MONTHLY)
+		;COUNT=							#numero ricorrenze
+		;UNTIL=							#data di fine ricorrenze	(yyyymmddThhmmssZ)
+		;INTERVAL=						#ogni quanto			(giorni/settimane/mesi/anni)
+ 	DTSTART:							#data inizio (yyyymmddThhmmssZ)
+ 	DTEND:								#data fine (yyyymmddThhmmssZ)
+	DTSTAMP:							#data creazione evento (yyyymmddThhmmssZ)
+	CATEGORIES:
+ 	LOCATION:							#nome luogo geografico
+ 	DESCRIPTION:	(\n) manda a capo				#descrizione
+	URL:								#link
+	ORGANIZER:							#organizzatore
+
+END:VEVENT								#PARTE OBBLIGATORIA
+
+BEGIN:VEVENT
+(ALTRO EVENTO)
+END:VEVENT
+
+END:VCALENDAR								#PARTE OBBLIGATORIA
