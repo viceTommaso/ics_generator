@@ -2,7 +2,7 @@
 
 
 ## Prerequisites
-python 3
+[python 3](https://www.python.org/downloads/)
 
 ## Program
 Il progarmma genera un evento per il calendario (file ics) attraverso i dati inseriti.
